@@ -397,6 +397,12 @@ h6, .h6 {
 .input-box input:focus-visible {
   outline: none;
 }
+.input-box input:hover {
+  box-shadow: 0px 0px 4px 2px #E58D35;
+}
+.input-box input:focus {
+  box-shadow: 0px 0px 4px 2px #89C249;
+}
 .input-box label {
   font-weight: 600;
   font-size: 15px;
@@ -485,6 +491,9 @@ section:nth-child(odd) .template-title:after {
   color: #fff;
 }
 .navbar-nav a:hover {
+  color: #89C249;
+}
+.navbar-nav a:focus {
   color: #89C249;
 }
 .navbar .btn {
@@ -798,6 +807,41 @@ bdi {
   padding: 13px 8px;
   justify-content: center;
   margin: 0 7px;
+}
+
+.services .slide-box {
+  position: relative;
+  min-height: 482px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 20px 33px;
+}
+.services .slide-box::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+}
+.services .slide-img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.services .slide-title, .services .slide-description, .services .slide-buttons {
+  position: relative;
+  text-align: left;
+  z-index: 1;
+}
+.services .slide-title, .services .slide-description {
+  margin-bottom: 13px;
 }
 
 footer {
