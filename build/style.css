@@ -844,6 +844,29 @@ bdi {
   margin-bottom: 13px;
 }
 
+.description {
+  position: relative;
+}
+
+.description-text {
+  max-width: 555px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 170%;
+}
+
+.description__img-box {
+  position: absolute;
+  margin-top: -173px;
+  padding-left: 9px;
+  z-index: -1;
+}
+
+.description__img {
+  max-width: 550px;
+  width: 30vw;
+}
+
 footer {
   height: 100px;
   background: #89C249;
@@ -1028,6 +1051,22 @@ footer {
   }
   .col-lg-3:nth-child(n+2) {
     margin-top: 0px;
+  }
+  .description {
+    max-width: 598px;
+  }
+  .description-text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 149.5%;
+    margin: -9px 9px 30px;
+  }
+  .description__img-box {
+    position: relative;
+    margin: auto;
+  }
+  .description__img {
+    width: 90vw;
   }
 }
 @media screen and (max-width: 767px) {
