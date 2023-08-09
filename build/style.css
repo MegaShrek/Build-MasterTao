@@ -887,7 +887,7 @@ bdi {
 }
 .questions .accordion-button::after {
   content: "";
-  background-image: url(../assets/img/arrow-circle-left\ 1.svg);
+  background-image: url(assets/img/arrow-circle-left\ 1.svg);
   margin-right: -16px;
   background-size: 27px;
   height: 30px;
@@ -895,7 +895,7 @@ bdi {
   transition: 0.5s;
 }
 .questions .accordion-button:not(.collapsed)::after {
-  background-image: url(../assets/img/arrow-circle-left\ 2.svg);
+  background-image: url(assets/img/arrow-circle-left\ 2.svg);
   transform: rotate(361deg);
   transition: 0.5s;
 }
