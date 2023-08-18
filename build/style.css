@@ -391,7 +391,7 @@ h6, .h6 {
 }
 .input-box input {
   border-radius: 10px;
-  padding: 16px 10px;
+  padding: 16px 20px;
   border: none;
 }
 .input-box input:focus-visible {
@@ -875,7 +875,7 @@ bdi {
   background-color: #282B38;
 }
 .questions .accordion-button {
-  height: 61px;
+  min-height: 61px;
   border-radius: 10px;
   background-color: transparent;
   color: #fff;
@@ -899,7 +899,6 @@ bdi {
 .questions .accordion-button:not(.collapsed)::after {
   background-image: url(assets/img/arrow-circle-left\ 2.svg);
   transform: rotate(361deg);
-  transition: 0.5s;
 }
 .questions .accordion-button:not(.collapsed) {
   color: #282B38;
@@ -924,7 +923,7 @@ bdi {
 }
 .questions .questions-form {
   background-color: #363A4D;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 38px 40px;
   margin-left: -16px;
 }
@@ -947,10 +946,40 @@ bdi {
   color: #CBCBCB;
   font-size: 15px;
   line-height: 126%;
-  padding: 19px 20px;
 }
-.questions #question {
-  padding-bottom: 32px;
+.questions textarea {
+  border-radius: 10px;
+  padding: 16px 20px;
+  resize: none;
+  outline: none;
+  /* Задаємо відступи від верхнього, правого та нижнього краю скроллбара */
+  /* Стилізація скроллбара для інших браузерів */
+  /* Firefox, Edge, Internet Explorer */
+}
+.questions textarea:hover {
+  box-shadow: 0px 0px 4px 2px #E58D35;
+}
+.questions textarea:focus {
+  box-shadow: 0px 0px 4px 2px #89C249;
+}
+.questions textarea::placeholder {
+  padding: 3px 0;
+}
+.questions textarea::-webkit-scrollbar {
+  width: 9px; /* Ширина скроллбара */
+}
+.questions textarea::-webkit-scrollbar-thumb {
+  background-color: #E58D35; /* Колір полоси скроллбара */
+  border-radius: 6px; /* Радіус закруглення полоси скроллбара */
+}
+.questions textarea::-webkit-scrollbar-thumb {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.questions textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #E58D35 transparent;
 }
 .questions .btn {
   width: 100%;
