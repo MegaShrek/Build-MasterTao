@@ -990,6 +990,37 @@ bdi {
   right: 34px;
 }
 
+.cooperation .img-fluid {
+  max-width: 635px;
+}
+.cooperation ul {
+  list-style: none;
+}
+.cooperation li {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 156.5%;
+  margin-bottom: 29px;
+}
+.cooperation-description {
+  margin: 34px 0px 43px -32px;
+}
+.cooperation-img {
+  border-radius: 20px;
+  margin-top: 9px;
+  margin-right: -44px;
+}
+.cooperation .second-row .img-fluid {
+  margin-left: -35px;
+}
+.cooperation .second-row li {
+  margin: 26px 14px 28px 19px;
+}
+.cooperation .second-row button {
+  margin-top: 13px;
+  margin-left: 51px;
+}
+
 footer {
   height: 100px;
   background: #89C249;
@@ -1054,9 +1085,13 @@ footer {
   .questions .btn {
     padding-right: 19px;
   }
+  .cooperation .img-fluid {
+    max-width: 461px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1062px) {
-  .icon {
+  .questions .icon {
     display: none;
   }
 }
@@ -1201,6 +1236,13 @@ footer {
   .description__img {
     width: 90vw;
   }
+  .questions {
+    margin-bottom: 125px;
+  }
+  .questions h2 {
+    display: flex;
+    justify-content: center;
+  }
   .questions .accordion-item {
     max-width: 100%;
   }
@@ -1209,6 +1251,54 @@ footer {
   }
   .questions .icon {
     display: inline-block;
+  }
+  .cooperation .template-title {
+    margin-bottom: 21px;
+  }
+  .cooperation h3 {
+    font-size: 16px;
+  }
+  .cooperation .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cooperation-img {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .cooperation li {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 149.5%;
+    margin-bottom: 22px;
+  }
+  .cooperation .img-fluid {
+    max-width: 1000px;
+    margin-bottom: -32px;
+  }
+  .cooperation .second-row {
+    flex-direction: column;
+  }
+  .cooperation .second-row .cooperation-img-2 {
+    margin-left: 0;
+    margin-bottom: -35px;
+  }
+  .cooperation .second-row li {
+    margin: 0 0 21px 0;
+  }
+  .cooperation .second-row button {
+    max-width: 100%;
+    width: 335px;
+    margin-top: 5px;
+    margin-left: 24px;
+    position: relative;
+  }
+  .cooperation .second-row button .icon {
+    position: absolute;
+    top: 18px;
+    right: 34px;
   }
 }
 @media screen and (max-width: 767px) {
